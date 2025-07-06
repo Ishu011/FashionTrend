@@ -9,7 +9,7 @@
 ---
 ## Live Demo
 
-Hosted Link : https://fashion-trend-ishu.vercel.app/women
+Hosted Link : https://fashion-trend-ishu.vercel.app/
 
 ##  Project Overview
 
