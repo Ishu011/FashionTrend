@@ -1,7 +1,9 @@
 # FashionTrend - Modern E-commerce Web App
 
-> **Aim**  
-> To create a responsive, beautifully designed, and fully functional fashion e-commerce web application inspired by Myntra, using React and Tailwind CSS. The app offers a streamlined shopping experience focused on design simplicity, product browsing, smart filtering, and real-time cart functionality — built for the modern shopper.
+ **Aim**  
+ To create a responsive, beautifully designed, and fully functional fashion e-commerce web application inspired by Myntra, using React and Tailwind CSS. The app offers a streamlined shopping experience focused on design simplicity, product browsing, smart filtering, and real-time cart functionality — built for the modern shopper.
+![image](https://github.com/user-attachments/assets/c7bfdb52-600b-4cd8-8bb2-477028488085)
+
 
 ---
 
@@ -9,6 +11,8 @@
 
 FashionTrend is a frontend-only fashion commerce web app offering seamless browsing of fashion products across categories like **Men**, **Women**, **Kids**, and **Beauty**.  
 It features a clean user interface, advanced filtering, search capabilities, and cart/wishlist features with persistent state using **LocalStorage**.
+![image](https://github.com/user-attachments/assets/efc5c5e8-4fd6-4891-8b19-fba307e57846)
+
 
 ---
 
@@ -117,3 +121,33 @@ graph TD
     S -->|View Product| F
 ```
 
+## Future Scope
+- **Backend integration using Firebase or Node.js**
+- **Payment gateway (Stripe/Razorpay)**
+- **Real authentication + order history**
+- **Admin dashboard for managing inventory**
+
+##  Deployment
+
+### Build Process
+1. Run `npm run build`
+2. Test with `npm run preview`
+3. Deploy `dist/` folder to hosting service
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+##  License
+
+This project is © 2025 Ishita Patel. All rights reserved.
+
+## 🙏 Acknowledgments
+
+- **Design Inspiration**: Myntra's modern e-commerce interface
+- **Icons**: Lucide React icon library
+- **Styling**: Tailwind CSS framework
+- **Build Tool**: Vite for fast development
+
+---
+
+*This is a demonstration project showcasing modern React development practices and beautiful UI design.*
