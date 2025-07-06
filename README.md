@@ -2,16 +2,21 @@
 
  **Aim**  
  To create a responsive, beautifully designed, and fully functional fashion e-commerce web application inspired by Myntra, using React and Tailwind CSS. The app offers a streamlined shopping experience focused on design simplicity, product browsing, smart filtering, and real-time cart functionality — built for the modern shopper.
-![image](https://github.com/user-attachments/assets/c7bfdb52-600b-4cd8-8bb2-477028488085)
+
+![image](https://github.com/user-attachments/assets/efc5c5e8-4fd6-4891-8b19-fba307e57846)
 
 
 ---
+## Live Demo
+
+Hosted Link : https://fashion-trend-ishu.vercel.app/women
 
 ##  Project Overview
 
 FashionTrend is a frontend-only fashion commerce web app offering seamless browsing of fashion products across categories like **Men**, **Women**, **Kids**, and **Beauty**.  
 It features a clean user interface, advanced filtering, search capabilities, and cart/wishlist features with persistent state using **LocalStorage**.
-![image](https://github.com/user-attachments/assets/efc5c5e8-4fd6-4891-8b19-fba307e57846)
+
+![image](https://github.com/user-attachments/assets/2213a188-7b38-4f34-8093-f27fd35aac55)
 
 
 ---
@@ -30,7 +35,7 @@ It features a clean user interface, advanced filtering, search capabilities, and
 
 ---
 
-## 📦 Tech Stack
+##  Tech Stack
 
 | Technology     | Purpose                                     |
 |----------------|---------------------------------------------|
@@ -44,7 +49,7 @@ It features a clean user interface, advanced filtering, search capabilities, and
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 ```
 myntra-ecommerce/
 ├── public/
@@ -80,7 +85,7 @@ myntra-ecommerce/
 ├── tailwind.config.js
 ├── vite.config.ts
 ```
-## 🔄 Application Flow
+##  Application Flow
 
 ### User Journey Flowchart
 
@@ -90,7 +95,7 @@ graph TD
     
     B -->|Browse Categories| C[ Category Page]
     B -->|Search Products| D[ Search Page]
-    B -->|Login/Signup| E[👤 Authentication]
+    B -->|Login/Signup| E[ Authentication]
     
     C --> F[ Product Detail]
     D --> F
@@ -104,7 +109,7 @@ graph TD
     J -->|Guest Checkout| K[ Shipping Info]
     J -->|Login Required| E
     
-    E -->|Successful Auth| L[👤 User Dashboard]
+    E -->|Successful Auth| L[ User Dashboard]
     L --> M{Dashboard Options}
     M -->|View Profile| N[Profile Page]
     M -->|Order History| O[ Orders Page]
@@ -134,14 +139,11 @@ graph TD
 2. Test with `npm run preview`
 3. Deploy `dist/` folder to hosting service
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ##  License
 
-This project is © 2025 Ishita Patel. All rights reserved.
+This project is ©2025 Ishu. All rights reserved.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Design Inspiration**: Myntra's modern e-commerce interface
 - **Icons**: Lucide React icon library
