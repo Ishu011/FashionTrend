@@ -1,7 +1,7 @@
 # FashionTrend - Modern E-commerce Web App
 
  **Aim**  
- To create a responsive, beautifully designed, and fully functional fashion e-commerce web application inspired by Myntra, using React and Tailwind CSS. The app offers a streamlined shopping experience focused on design simplicity, product browsing, smart filtering, and real-time cart functionality — built for the modern shopper.
+ To create a responsive, beautifully designed, and functional fashion e-commerce web application inspired by Myntra, using React . The app offers a streamlined shopping experience focused on design simplicity, product browsing, smart filtering, and real-time cart functionality — built for the modern shopper.
 
 ![image](https://github.com/user-attachments/assets/efc5c5e8-4fd6-4891-8b19-fba307e57846)
 
@@ -13,7 +13,8 @@ Hosted Link : https://fashion-trend-ishu.vercel.app/
 
 ##  Project Overview
 
-FashionTrend is a frontend-only fashion commerce web app offering seamless browsing of fashion products across categories like **Men**, **Women**, **Kids**, and **Beauty**.  
+FashionTrend is a modern fashion e-commerce web application that offers a smooth and engaging shopping experience.
+Users can browse fashion products across categories like **Men**, **Women**, **Kids**, and **Beauty** with powerful filtering, search, cart, and wishlist features.   
 It features a clean user interface, advanced filtering, search capabilities, and cart/wishlist features with persistent state using **LocalStorage**.
 
 ![image](https://github.com/user-attachments/assets/2213a188-7b38-4f34-8093-f27fd35aac55)
@@ -44,47 +45,10 @@ It features a clean user interface, advanced filtering, search capabilities, and
 | **Tailwind CSS**| Utility-first CSS styling                  |
 | **React Router**| Client-side routing                        |
 | **Lucide Icons**| Clean modern icon system                   |
-| **Context API** | Global state (cart, wishlist, auth)        |
-| **LocalStorage**| Persistence across reloads                 |
+| **Context **    | Global state (cart, wishlist, auth)        |
+               
 
 ---
-
-##  Folder Structure
-```
-myntra-ecommerce/
-├── public/
-│   ├── assets/                
-│   └── index.html
-├── src/
-│   ├── components/                      
-│   │   ├── Header.jsx                  
-│   │   ├── Footer.jsx                   
-│   │   ├── ProductCard.jsx              
-│   │   └── FilterSidebar.jsx            # Product filtering
-│   ├── pages/                           # Route components
-│   │   ├── Home.jsx                     # Landing page
-│   │   ├── CategoryPage.jsx             # Product listings
-│   │   ├── ProductDetail.jsx            # Individual product view
-│   │   ├── Cart.jsx                     # Shopping cart
-│   │   ├── Wishlist.jsx                 # Saved products
-│   │   ├── Checkout.jsx                 # Order completion
-│   │   ├── Login.jsx                    # User authentication
-│   │   ├── Signup.jsx                   # User registration
-│   │   ├── Profile.jsx                  # User account
-│   │   ├── Orders.jsx                   # Order history
-│   │   ├── Search.jsx                   # Search results
-│   │   └── Contact.jsx                  # Contact form
-│   ├── context/
-│   │   └── AppContext.jsx               
-│   ├── data/
-│   │   └── products.js                  
-│   ├── App.jsx                          
-│   ├── main.tsx                         
-│   └── index.css                        
-├── package.json
-├── tailwind.config.js
-├── vite.config.ts
-```
 ##  Application Flow
 
 ### User Journey Flowchart
@@ -126,6 +90,44 @@ graph TD
     S -->|View Product| F
 ```
 
+
+##  Folder Structure
+```
+myntra-ecommerce/
+├── public/
+│   ├── assets/                
+│   └── index.html
+├── src/
+│   ├── components/                      
+│   │   ├── Header.jsx                  
+│   │   ├── Footer.jsx                   
+│   │   ├── ProductCard.jsx              
+│   │   └── FilterSidebar.jsx            # Product filtering
+│   ├── pages/                           # Route components
+│   │   ├── Home.jsx                     # Landing page
+│   │   ├── CategoryPage.jsx             # Product listings
+│   │   ├── ProductDetail.jsx            # Individual product view
+│   │   ├── Cart.jsx                     # Shopping cart
+│   │   ├── Wishlist.jsx                 # Saved products
+│   │   ├── Checkout.jsx                 # Order completion
+│   │   ├── Login.jsx                    # User authentication
+│   │   ├── Signup.jsx                   # User registration
+│   │   ├── Profile.jsx                  # User account
+│   │   ├── Orders.jsx                   # Order history
+│   │   ├── Search.jsx                   # Search results
+│   │   └── Contact.jsx                  # Contact form
+│   ├── context/
+│   │   └── AppContext.jsx               
+│   ├── data/
+│   │   └── products.js                  
+│   ├── App.jsx                          
+│   ├── main.tsx                         
+│   └── index.css                        
+├── package.json
+├── tailwind.config.js
+├── vite.config.ts
+```
+
 ## Future Scope
 - **Backend integration using Firebase or Node.js**
 - **Payment gateway (Stripe/Razorpay)**
@@ -153,3 +155,4 @@ This project is ©2025 Ishu. All rights reserved.
 ---
 
 *This is a demonstration project showcasing modern React development practices and beautiful UI design.*
+
