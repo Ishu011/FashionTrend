@@ -2,22 +2,22 @@
 A complete full-stack fashion e-commerce application — built using React 18 + Vite, Node.js + Express, MongoDB, JWT Authentication, bcrypt, and Tailwind CSS.
 FashionTrend delivers a clean, modern shopping experience with smart filtering, real-time search, cart/wishlist management, authentication, order processing, and a fully functional production-ready backend system following clean MVC architecture.
 ##  Project Overview
-FashionTrend is a full-stack fashion e-commerce platform designed for the modern shopper.
-Users can browse products across Men, Women, Kids, and Beauty categories with:
-Real-time search
-Advanced client + server-side filtering
-Cart & Wishlist sync with backend
-Authentication (Signup/Login) with JWT
-Order creation & tracking
-Profile and Order History pages
-Scalable API structure with MongoDB
-The backend includes:
-REST API
-JWT authentication
-Secure password hashing
-MongoDB models for Users, Products, Cart, Wishlist, Orders
-Controllers, Routes, Middleware
-CORS + JSON parsing
+- FashionTrend is a full-stack fashion e-commerce platform designed for the modern shopper.
+- Users can browse products across Men, Women, Kids, and Beauty categories with:
+- Real-time search
+- Advanced client + server-side filtering
+- Cart & Wishlist sync with backend
+- Authentication (Signup/Login) with JWT
+- Order creation & tracking
+- Profile and Order History pages
+- Scalable API structure with MongoDB
+- The backend includes:
+- REST API
+- JWT authentication
+- Secure password hashing
+- MongoDB models for Users, Products, Cart, Wishlist, Orders
+- Controllers, Routes, Middleware
+- CORS + JSON parsing
 ![image](https://github.com/user-attachments/assets/efc5c5e8-4fd6-4891-8b19-fba307e57846)
 
 
@@ -35,101 +35,56 @@ Hosted Link : https://fashion-trend-ishu.vercel.app/
 ## Features 
 
 ###  Core Functionalities
-Product Catalog
+## Product Catalog : 
 Fetches products from MongoDB through REST API
 
-Advanced Filtering
+## Advanced Filtering : 
 Server-side + client-side filtering (brand, price, size)
 
-Smart Search
+## Smart Search :
 Real-time search through API
 
-Shopping Cart
+## Shopping Cart :
 Add/remove/update items (stored in DB per user)
 
-Wishlist
+## Wishlist :
 Save/remove products (MongoDB-controlled)
 
-Authentication (JWT)
+## Authentication (JWT) : 
 Signup, Login, Profile fetch
 
-Order Management
+## Order Management :
 Checkout → Order creation → Clear cart → Order history page
 
-Protected Routes
+## Protected Routes :
 Uses JWT in HTTP headers
 
-Responsive UI
+## Responsive UI :
 Built with Tailwind CSS
 
-Global State
+## Global State :
 Context API for cart, wishlist, auth
 
 ---
 
 ##  Tech Stack
 
-Tech Stack
-Technology	Purpose
-React 18	Frontend UI framework
-Vite	Frontend bundler
-Tailwind CSS	Styling
-React Router	SPA routing
-Context API	State management
-Node.js	Backend runtime
-Express.js	Backend server
-MongoDB	Database
-Mongoose	Object modeling
-JWT	Authentication
-bcrypt	Password hashing
-CORS	API access management
+| **Technology**   | **Purpose**                                    |
+| ---------------- | ---------------------------------------------- |
+| **React 18**     | Frontend UI framework                          |
+| **Vite**         | Frontend bundler (development + production)    |
+| **Tailwind CSS** | Utility-first styling                          |
+| **React Router** | Single Page Application routing                |
+| **Context API**  | Global state management (auth, cart, wishlist) |
+| **Node.js**      | Backend runtime environment                    |
+| **Express.js**   | Backend web server framework                   |
+| **MongoDB**      | NoSQL Database                                 |
+| **Mongoose**     | MongoDB object modeling (schemas)              |
+| **JWT**          | User authentication + authorization            |
+| **bcrypt**       | Password hashing & security                    |
+| **CORS**         | Secure frontend-backend communication          |
                
 
----
-##  Application Flow
-
-### User Journey Flowchart
-
-```mermaid
-graph TD
-    A[Landing Page] --> B{User Action}
-
-    B -->|Browse Categories| C[Category Page]
-    B -->|Search Products| D[Search Page]
-    B -->|Login or Signup| E[Authentication]
-
-    C --> F[Product Detail]
-    D --> F
-
-    F --> G{User Decision}
-    G -->|Add to Cart| H[Shopping Cart]
-    G -->|Add to Wishlist| I[Wishlist]
-    G -->|Continue Shopping| C
-
-    H --> J{Checkout Process}
-    J -->|Proceed Checkout| K[Shipping Info]
-    J -->|Login Required| E
-
-    E -->|Auth Successful| L[User Dashboard]
-
-    L --> M{Dashboard Options}
-    M -->|Profile Page| N[Profile]
-    M -->|Order History| O[Orders]
-    M -->|Continue Shopping| A
-
-    K --> P[Order Create]
-    P --> Q[Order Review]
-    Q --> R[Order Confirmed]
-    R --> O
-
-    I --> S{Wishlist Actions}
-    S -->|Move to Cart| H
-    S -->|Remove Item| I
-    S -->|View Product| F
-
-
-
-```
 
 
 ##  Folder Structure
@@ -210,25 +165,72 @@ FashionTrend/
         └── authMiddleware.js      # JWT token verification
 
 ```
+
+---
+##  Application Flow
+
+### User Journey Flowchart
+
+```mermaid
+graph TD
+    A[Landing Page] --> B{User Action}
+
+    B -->|Browse Categories| C[Category Page]
+    B -->|Search Products| D[Search Page]
+    B -->|Login or Signup| E[Authentication]
+
+    C --> F[Product Detail]
+    D --> F
+
+    F --> G{User Decision}
+    G -->|Add to Cart| H[Shopping Cart]
+    G -->|Add to Wishlist| I[Wishlist]
+    G -->|Continue Shopping| C
+
+    H --> J{Checkout Process}
+    J -->|Proceed Checkout| K[Shipping Info]
+    J -->|Login Required| E
+
+    E -->|Auth Successful| L[User Dashboard]
+
+    L --> M{Dashboard Options}
+    M -->|Profile Page| N[Profile]
+    M -->|Order History| O[Orders]
+    M -->|Continue Shopping| A
+
+    K --> P[Order Create]
+    P --> Q[Order Review]
+    Q --> R[Order Confirmed]
+    R --> O
+
+    I --> S{Wishlist Actions}
+    S -->|Move to Cart| H
+    S -->|Remove Item| I
+    S -->|View Product| F
+
+
+
+```
+
 ## Running the Project (Full Stack)
 1️⃣ Install Dependencies (Both Sides)
 ## Frontend:
-cd frontend
-npm install
-npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
 ## Backend:
-cd backend
-npm install
-npm run dev
+- cd backend
+- npm install
+- npm run dev
 
 ## Future Scope
-Payment gateway (Stripe/Razorpay)
-Admin dashboard for managing products & orders
-Cloud image upload (Cloudinary)
-Reviews & Ratings
-Recommended products using ML
-Email/OTP authentication
+- Payment gateway (Stripe/Razorpay)
+- Admin dashboard for managing products & orders
+- Cloud image upload (Cloudinary)
+- Reviews & Ratings
+- Recommended products using ML
+- Email/OTP authentication
 
 ##  Deployment
 
@@ -250,7 +252,8 @@ This project is ©2025 Ishu. All rights reserved.
 
 ---
 
-*This is a demonstration project showcasing modern React development practices and beautiful UI design.*
+*This is a demonstration project showcasing modern full stack development practices and beautiful UI design.*
+
 
 
 
