@@ -94,38 +94,39 @@ CORS	API access management
 graph TD
     A[Landing Page] --> B{User Action}
 
-    B -->|Browse Categories| C[ Category Page]
-    B -->|Search Products| D[ Search Page]
-    B -->|Login/Signup| E[ Authentication]
+    B -->|Browse Categories| C[Category Page]
+    B -->|Search Products| D[Search Page]
+    B -->|Login or Signup| E[Authentication]
 
-    C --> F[ Product Detail]
+    C --> F[Product Detail]
     D --> F
 
     F --> G{User Decision}
-    G -->|Add to Cart <br/> (API: /api/cart/add)| H[ Shopping Cart]
-    G -->|Add to Wishlist <br/> (API: /api/wishlist/add)| I[Wishlist]
+    G -->|Add to Cart (API: cart/add)| H[Shopping Cart]
+    G -->|Add to Wishlist (API: wishlist/add)| I[Wishlist]
     G -->|Continue Shopping| C
 
     H --> J{Checkout Process}
-    J -->|Proceed to Checkout| K[ Shipping Info]
-    J -->|Login Required <br/> (JWT Protected)| E
+    J -->|Proceed to Checkout| K[Shipping Info]
+    J -->|Login Required| E
 
-    E -->|Successful Auth (JWT Created)| L[ User Dashboard]
+    E -->|Auth Successful (JWT)| L[User Dashboard]
+
     L --> M{Dashboard Options}
-
-    M -->|View Profile <br/> (API: /api/auth/me)| N[Profile Page]
-    M -->|Order History <br/> (API: /api/orders/:userId)| O[ Orders Page]
+    M -->|Profile Page| N[Profile]
+    M -->|Order History| O[Orders]
     M -->|Continue Shopping| A
 
-    K --> P[ Order Creation <br/> (API: /api/orders/create)]
-    P --> Q[ Order Review]
+    K --> P[Order Creation (API: orders/create)]
+    P --> Q[Order Review]
     Q --> R[Order Confirmation]
     R --> O
 
     I --> S{Wishlist Actions}
-    S -->|Move to Cart <br/> (API: /api/cart/add)| H
-    S -->|Remove Item <br/> (API: /api/wishlist/remove)| I
+    S -->|Move to Cart (API: cart/add)| H
+    S -->|Remove Item (API: wishlist/remove)| I
     S -->|View Product| F
+
 
 ```
 
@@ -249,6 +250,7 @@ This project is ©2025 Ishu. All rights reserved.
 ---
 
 *This is a demonstration project showcasing modern React development practices and beautiful UI design.*
+
 
 
 
