@@ -102,30 +102,31 @@ graph TD
     D --> F
 
     F --> G{User Decision}
-    G -->|Add to Cart (API: cart/add)| H[Shopping Cart]
-    G -->|Add to Wishlist (API: wishlist/add)| I[Wishlist]
+    G -->|Add to Cart| H[Shopping Cart]
+    G -->|Add to Wishlist| I[Wishlist]
     G -->|Continue Shopping| C
 
     H --> J{Checkout Process}
-    J -->|Proceed to Checkout| K[Shipping Info]
+    J -->|Proceed Checkout| K[Shipping Info]
     J -->|Login Required| E
 
-    E -->|Auth Successful (JWT)| L[User Dashboard]
+    E -->|Auth Successful| L[User Dashboard]
 
     L --> M{Dashboard Options}
     M -->|Profile Page| N[Profile]
     M -->|Order History| O[Orders]
     M -->|Continue Shopping| A
 
-    K --> P[Order Creation (API: orders/create)]
+    K --> P[Order Create]
     P --> Q[Order Review]
-    Q --> R[Order Confirmation]
+    Q --> R[Order Confirmed]
     R --> O
 
     I --> S{Wishlist Actions}
-    S -->|Move to Cart (API: cart/add)| H
-    S -->|Remove Item (API: wishlist/remove)| I
+    S -->|Move to Cart| H
+    S -->|Remove Item| I
     S -->|View Product| F
+
 
 
 ```
@@ -250,6 +251,7 @@ This project is ©2025 Ishu. All rights reserved.
 ---
 
 *This is a demonstration project showcasing modern React development practices and beautiful UI design.*
+
 
 
 
