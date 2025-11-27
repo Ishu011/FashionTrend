@@ -172,7 +172,8 @@ FashionTrend/
 ### User Journey Flowchart
 
 ```mermaid
-graph TD
+flowchart TD
+
     A[Landing Page] --> B{User Action}
 
     B -->|Browse Categories| C[Category Page]
@@ -180,33 +181,33 @@ graph TD
     B -->|Login or Signup| E[Authentication]
 
     C --> F[Product Detail]
-    D --> F
+    D --> F[Product Detail]
 
     F --> G{User Decision}
     G -->|Add to Cart| H[Shopping Cart]
     G -->|Add to Wishlist| I[Wishlist]
-    G -->|Continue Shopping| C
+    G -->|Continue Shopping| C[Category Page]
 
     H --> J{Checkout Process}
     J -->|Proceed Checkout| K[Shipping Info]
-    J -->|Login Required| E
+    J -->|Login Required| E[Authentication]
 
     E -->|Auth Successful| L[User Dashboard]
 
     L --> M{Dashboard Options}
     M -->|Profile Page| N[Profile]
     M -->|Order History| O[Orders]
-    M -->|Continue Shopping| A
+    M -->|Continue Shopping| A[Landing Page]
 
     K --> P[Order Create]
     P --> Q[Order Review]
     Q --> R[Order Confirmed]
-    R --> O
+    R --> O[Order History]
 
     I --> S{Wishlist Actions}
-    S -->|Move to Cart| H
-    S -->|Remove Item| I
-    S -->|View Product| F
+    S -->|Move to Cart| H[Shopping Cart]
+    S -->|Remove Item| I[Wishlist]
+    S -->|View Product| F[Product Detail]
 
 
 
@@ -253,6 +254,7 @@ This project is ©2025 Ishu. All rights reserved.
 ---
 
 *This is a demonstration project showcasing modern full stack development practices and beautiful UI design.*
+
 
 
 
